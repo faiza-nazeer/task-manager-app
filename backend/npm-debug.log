@@ -1,0 +1,339 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'express',
+1 verbose cli   'mongoose',
+1 verbose cli   'cors',
+1 verbose cli   'dotenv',
+1 verbose cli   'body-parser',
+1 verbose cli   'express-validator' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData express
+8 silly fetchPackageMetaData mongoose
+9 silly fetchPackageMetaData cors
+10 silly fetchPackageMetaData dotenv
+11 silly fetchPackageMetaData body-parser
+12 silly fetchPackageMetaData express-validator
+13 silly fetchNamedPackageData express
+14 silly mapToRegistry name express
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/express
+18 silly fetchNamedPackageData mongoose
+19 silly mapToRegistry name mongoose
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+23 silly fetchNamedPackageData cors
+24 silly mapToRegistry name cors
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry uri https://registry.npmjs.org/cors
+28 silly fetchNamedPackageData dotenv
+29 silly mapToRegistry name dotenv
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/dotenv
+33 silly fetchNamedPackageData body-parser
+34 silly mapToRegistry name body-parser
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry uri https://registry.npmjs.org/body-parser
+38 silly fetchNamedPackageData express-validator
+39 silly mapToRegistry name express-validator
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry uri https://registry.npmjs.org/express-validator
+43 verbose request uri https://registry.npmjs.org/express
+44 verbose request no auth needed
+45 info attempt registry request try #1 at 1:03:34 PM
+46 verbose request id 6ffb8850d3f052fc
+47 http request GET https://registry.npmjs.org/express
+48 verbose request uri https://registry.npmjs.org/mongoose
+49 verbose request no auth needed
+50 info attempt registry request try #1 at 1:03:34 PM
+51 http request GET https://registry.npmjs.org/mongoose
+52 verbose request uri https://registry.npmjs.org/cors
+53 verbose request no auth needed
+54 info attempt registry request try #1 at 1:03:34 PM
+55 http request GET https://registry.npmjs.org/cors
+56 verbose request uri https://registry.npmjs.org/dotenv
+57 verbose request no auth needed
+58 info attempt registry request try #1 at 1:03:34 PM
+59 http request GET https://registry.npmjs.org/dotenv
+60 verbose request uri https://registry.npmjs.org/body-parser
+61 verbose request no auth needed
+62 info attempt registry request try #1 at 1:03:34 PM
+63 http request GET https://registry.npmjs.org/body-parser
+64 verbose request uri https://registry.npmjs.org/express-validator
+65 verbose request no auth needed
+66 info attempt registry request try #1 at 1:03:34 PM
+67 http request GET https://registry.npmjs.org/express-validator
+68 http 200 https://registry.npmjs.org/body-parser
+69 verbose headers { date: 'Mon, 23 Jun 2025 08:03:35 GMT',
+69 verbose headers   'content-type': 'application/json',
+69 verbose headers   'transfer-encoding': 'chunked',
+69 verbose headers   connection: 'keep-alive',
+69 verbose headers   'cf-ray': '95427840e994e8c7-KHI',
+69 verbose headers   'cf-cache-status': 'HIT',
+69 verbose headers   'access-control-allow-origin': '*',
+69 verbose headers   age: '105',
+69 verbose headers   'cache-control': 'public, max-age=300',
+69 verbose headers   etag: 'W/"970269da9750d98f747fd05e682e36b9"',
+69 verbose headers   'last-modified': 'Thu, 27 Mar 2025 01:23:23 GMT',
+69 verbose headers   vary: 'accept-encoding, accept',
+69 verbose headers   'set-cookie':
+69 verbose headers    [ '_cfuvid=gVtdAKWgaNnOszNbE7bhLWFfgZqtpqhjeasYs8JWMyQ-1750665815208-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+69 verbose headers   server: 'cloudflare',
+69 verbose headers   'content-encoding': 'gzip' }
+70 silly get cb [ 200,
+70 silly get   { date: 'Mon, 23 Jun 2025 08:03:35 GMT',
+70 silly get     'content-type': 'application/json',
+70 silly get     'transfer-encoding': 'chunked',
+70 silly get     connection: 'keep-alive',
+70 silly get     'cf-ray': '95427840e994e8c7-KHI',
+70 silly get     'cf-cache-status': 'HIT',
+70 silly get     'access-control-allow-origin': '*',
+70 silly get     age: '105',
+70 silly get     'cache-control': 'public, max-age=300',
+70 silly get     etag: 'W/"970269da9750d98f747fd05e682e36b9"',
+70 silly get     'last-modified': 'Thu, 27 Mar 2025 01:23:23 GMT',
+70 silly get     vary: 'accept-encoding, accept',
+70 silly get     'set-cookie':
+70 silly get      [ '_cfuvid=gVtdAKWgaNnOszNbE7bhLWFfgZqtpqhjeasYs8JWMyQ-1750665815208-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+70 silly get     server: 'cloudflare',
+70 silly get     'content-encoding': 'gzip' } ]
+71 verbose get saving body-parser to /home/ns3/.npm/registry.npmjs.org/body-parser/.cache.json
+72 verbose makeDirectory /home/ns3/.npm creation not in flight; initializing
+73 silly makeDirectory /home/ns3/.npm uid: 1000 gid: 1000
+74 http 200 https://registry.npmjs.org/dotenv
+75 verbose headers { date: 'Mon, 23 Jun 2025 08:03:35 GMT',
+75 verbose headers   'content-type': 'application/json',
+75 verbose headers   'transfer-encoding': 'chunked',
+75 verbose headers   connection: 'keep-alive',
+75 verbose headers   'cf-ray': '95427840e8034b55-KHI',
+75 verbose headers   'cf-cache-status': 'HIT',
+75 verbose headers   'access-control-allow-origin': '*',
+75 verbose headers   age: '287',
+75 verbose headers   'cache-control': 'public, max-age=300',
+75 verbose headers   etag: 'W/"47dbdac5b04b95fdec027ac75ed1b0a4"',
+75 verbose headers   'last-modified': 'Thu, 10 Apr 2025 22:14:41 GMT',
+75 verbose headers   vary: 'accept-encoding, accept',
+75 verbose headers   'set-cookie':
+75 verbose headers    [ '_cfuvid=FP59rckyzYzMlGQCeIFRU8QEHIXIKfGVr6ELzQPv6Jk-1750665815207-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+75 verbose headers   server: 'cloudflare',
+75 verbose headers   'content-encoding': 'gzip' }
+76 silly get cb [ 200,
+76 silly get   { date: 'Mon, 23 Jun 2025 08:03:35 GMT',
+76 silly get     'content-type': 'application/json',
+76 silly get     'transfer-encoding': 'chunked',
+76 silly get     connection: 'keep-alive',
+76 silly get     'cf-ray': '95427840e8034b55-KHI',
+76 silly get     'cf-cache-status': 'HIT',
+76 silly get     'access-control-allow-origin': '*',
+76 silly get     age: '287',
+76 silly get     'cache-control': 'public, max-age=300',
+76 silly get     etag: 'W/"47dbdac5b04b95fdec027ac75ed1b0a4"',
+76 silly get     'last-modified': 'Thu, 10 Apr 2025 22:14:41 GMT',
+76 silly get     vary: 'accept-encoding, accept',
+76 silly get     'set-cookie':
+76 silly get      [ '_cfuvid=FP59rckyzYzMlGQCeIFRU8QEHIXIKfGVr6ELzQPv6Jk-1750665815207-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+76 silly get     server: 'cloudflare',
+76 silly get     'content-encoding': 'gzip' } ]
+77 verbose get saving dotenv to /home/ns3/.npm/registry.npmjs.org/dotenv/.cache.json
+78 http 200 https://registry.npmjs.org/express
+79 verbose headers { date: 'Mon, 23 Jun 2025 08:03:35 GMT',
+79 verbose headers   'content-type': 'application/json',
+79 verbose headers   'transfer-encoding': 'chunked',
+79 verbose headers   connection: 'keep-alive',
+79 verbose headers   'cf-ray': '954278419ed934e9-KHI',
+79 verbose headers   'cf-cache-status': 'HIT',
+79 verbose headers   'access-control-allow-origin': '*',
+79 verbose headers   age: '258',
+79 verbose headers   'cache-control': 'public, max-age=300',
+79 verbose headers   etag: 'W/"121be08016af2d7a4e4e5805e7f7bffa"',
+79 verbose headers   'last-modified': 'Sat, 14 Jun 2025 02:53:34 GMT',
+79 verbose headers   vary: 'accept-encoding, accept',
+79 verbose headers   'set-cookie':
+79 verbose headers    [ '_cfuvid=LTYj7AdIY3m06e05gc.6S.P0KFp8olAxaTXe.KW1avQ-1750665815326-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+79 verbose headers   server: 'cloudflare',
+79 verbose headers   'content-encoding': 'gzip' }
+80 silly get cb [ 200,
+80 silly get   { date: 'Mon, 23 Jun 2025 08:03:35 GMT',
+80 silly get     'content-type': 'application/json',
+80 silly get     'transfer-encoding': 'chunked',
+80 silly get     connection: 'keep-alive',
+80 silly get     'cf-ray': '954278419ed934e9-KHI',
+80 silly get     'cf-cache-status': 'HIT',
+80 silly get     'access-control-allow-origin': '*',
+80 silly get     age: '258',
+80 silly get     'cache-control': 'public, max-age=300',
+80 silly get     etag: 'W/"121be08016af2d7a4e4e5805e7f7bffa"',
+80 silly get     'last-modified': 'Sat, 14 Jun 2025 02:53:34 GMT',
+80 silly get     vary: 'accept-encoding, accept',
+80 silly get     'set-cookie':
+80 silly get      [ '_cfuvid=LTYj7AdIY3m06e05gc.6S.P0KFp8olAxaTXe.KW1avQ-1750665815326-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+80 silly get     server: 'cloudflare',
+80 silly get     'content-encoding': 'gzip' } ]
+81 verbose get saving express to /home/ns3/.npm/registry.npmjs.org/express/.cache.json
+82 http 200 https://registry.npmjs.org/cors
+83 verbose headers { date: 'Mon, 23 Jun 2025 08:03:35 GMT',
+83 verbose headers   'content-type': 'application/json',
+83 verbose headers   'transfer-encoding': 'chunked',
+83 verbose headers   connection: 'keep-alive',
+83 verbose headers   'cf-ray': '9542784178364906-KHI',
+83 verbose headers   'cf-cache-status': 'HIT',
+83 verbose headers   'access-control-allow-origin': '*',
+83 verbose headers   'cache-control': 'public, max-age=300',
+83 verbose headers   etag: 'W/"f33d240736738c23ec931b67b22367b5"',
+83 verbose headers   'last-modified': 'Wed, 09 Apr 2025 02:30:02 GMT',
+83 verbose headers   vary: 'accept-encoding, accept',
+83 verbose headers   'set-cookie':
+83 verbose headers    [ '_cfuvid=RpqbjLqRHVNCSjZ0J4.tpZFz1VzapWPi7U2Erb2S6iM-1750665815552-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+83 verbose headers   server: 'cloudflare',
+83 verbose headers   'content-encoding': 'gzip' }
+84 silly get cb [ 200,
+84 silly get   { date: 'Mon, 23 Jun 2025 08:03:35 GMT',
+84 silly get     'content-type': 'application/json',
+84 silly get     'transfer-encoding': 'chunked',
+84 silly get     connection: 'keep-alive',
+84 silly get     'cf-ray': '9542784178364906-KHI',
+84 silly get     'cf-cache-status': 'HIT',
+84 silly get     'access-control-allow-origin': '*',
+84 silly get     'cache-control': 'public, max-age=300',
+84 silly get     etag: 'W/"f33d240736738c23ec931b67b22367b5"',
+84 silly get     'last-modified': 'Wed, 09 Apr 2025 02:30:02 GMT',
+84 silly get     vary: 'accept-encoding, accept',
+84 silly get     'set-cookie':
+84 silly get      [ '_cfuvid=RpqbjLqRHVNCSjZ0J4.tpZFz1VzapWPi7U2Erb2S6iM-1750665815552-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+84 silly get     server: 'cloudflare',
+84 silly get     'content-encoding': 'gzip' } ]
+85 verbose get saving cors to /home/ns3/.npm/registry.npmjs.org/cors/.cache.json
+86 http 200 https://registry.npmjs.org/mongoose
+87 verbose headers { date: 'Mon, 23 Jun 2025 08:03:35 GMT',
+87 verbose headers   'content-type': 'application/json',
+87 verbose headers   'transfer-encoding': 'chunked',
+87 verbose headers   connection: 'keep-alive',
+87 verbose headers   'cf-ray': '95427841abd297dc-KHI',
+87 verbose headers   'cf-cache-status': 'HIT',
+87 verbose headers   'access-control-allow-origin': '*',
+87 verbose headers   age: '209',
+87 verbose headers   'cache-control': 'public, max-age=300',
+87 verbose headers   etag: 'W/"40429c5a80a588fe7e23d56d82c43f72"',
+87 verbose headers   'last-modified': 'Mon, 16 Jun 2025 19:52:44 GMT',
+87 verbose headers   vary: 'accept-encoding, accept',
+87 verbose headers   'set-cookie':
+87 verbose headers    [ '_cfuvid=.n94xv0AZhY_yvimRwcI7qrdsPQ2qCG_ztwO7HxJtTY-1750665815345-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+87 verbose headers   server: 'cloudflare',
+87 verbose headers   'content-encoding': 'gzip' }
+88 silly get cb [ 200,
+88 silly get   { date: 'Mon, 23 Jun 2025 08:03:35 GMT',
+88 silly get     'content-type': 'application/json',
+88 silly get     'transfer-encoding': 'chunked',
+88 silly get     connection: 'keep-alive',
+88 silly get     'cf-ray': '95427841abd297dc-KHI',
+88 silly get     'cf-cache-status': 'HIT',
+88 silly get     'access-control-allow-origin': '*',
+88 silly get     age: '209',
+88 silly get     'cache-control': 'public, max-age=300',
+88 silly get     etag: 'W/"40429c5a80a588fe7e23d56d82c43f72"',
+88 silly get     'last-modified': 'Mon, 16 Jun 2025 19:52:44 GMT',
+88 silly get     vary: 'accept-encoding, accept',
+88 silly get     'set-cookie':
+88 silly get      [ '_cfuvid=.n94xv0AZhY_yvimRwcI7qrdsPQ2qCG_ztwO7HxJtTY-1750665815345-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+88 silly get     server: 'cloudflare',
+88 silly get     'content-encoding': 'gzip' } ]
+89 verbose get saving mongoose to /home/ns3/.npm/registry.npmjs.org/mongoose/.cache.json
+90 http 200 https://registry.npmjs.org/express-validator
+91 verbose headers { date: 'Mon, 23 Jun 2025 08:03:36 GMT',
+91 verbose headers   'content-type': 'application/json',
+91 verbose headers   'transfer-encoding': 'chunked',
+91 verbose headers   connection: 'keep-alive',
+91 verbose headers   'cf-ray': '95427841bd58d8c3-KHI',
+91 verbose headers   'cf-cache-status': 'REVALIDATED',
+91 verbose headers   'access-control-allow-origin': '*',
+91 verbose headers   'cache-control': 'public, max-age=300',
+91 verbose headers   etag: 'W/"e2aaeebcdb3fff5e08f14bc696345f1f"',
+91 verbose headers   'last-modified': 'Sun, 29 Dec 2024 02:41:15 GMT',
+91 verbose headers   vary: 'accept-encoding, accept',
+91 verbose headers   'set-cookie':
+91 verbose headers    [ '_cfuvid=fFyOsSgZ5qwNH0405zswXbwnq_xDZLluKV3fujY_Rlo-1750665816395-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+91 verbose headers   server: 'cloudflare',
+91 verbose headers   'content-encoding': 'gzip' }
+92 silly get cb [ 200,
+92 silly get   { date: 'Mon, 23 Jun 2025 08:03:36 GMT',
+92 silly get     'content-type': 'application/json',
+92 silly get     'transfer-encoding': 'chunked',
+92 silly get     connection: 'keep-alive',
+92 silly get     'cf-ray': '95427841bd58d8c3-KHI',
+92 silly get     'cf-cache-status': 'REVALIDATED',
+92 silly get     'access-control-allow-origin': '*',
+92 silly get     'cache-control': 'public, max-age=300',
+92 silly get     etag: 'W/"e2aaeebcdb3fff5e08f14bc696345f1f"',
+92 silly get     'last-modified': 'Sun, 29 Dec 2024 02:41:15 GMT',
+92 silly get     vary: 'accept-encoding, accept',
+92 silly get     'set-cookie':
+92 silly get      [ '_cfuvid=fFyOsSgZ5qwNH0405zswXbwnq_xDZLluKV3fujY_Rlo-1750665816395-0.0.1.1-604800000; path=/; domain=.npmjs.org; HttpOnly; Secure; SameSite=None' ],
+92 silly get     server: 'cloudflare',
+92 silly get     'content-encoding': 'gzip' } ]
+93 verbose get saving express-validator to /home/ns3/.npm/registry.npmjs.org/express-validator/.cache.json
+94 silly install normalizeTree
+95 silly loadCurrentTree Finishing
+96 silly loadIdealTree Starting
+97 silly install loadIdealTree
+98 silly cloneCurrentTree Starting
+99 silly install cloneCurrentTreeToIdealTree
+100 silly cloneCurrentTree Finishing
+101 silly loadShrinkwrap Starting
+102 silly install loadShrinkwrap
+103 silly loadShrinkwrap Finishing
+104 silly loadAllDepsIntoIdealTree Starting
+105 silly install loadAllDepsIntoIdealTree
+106 silly resolveWithNewModule body-parser@2.2.0 checking installable status
+107 silly cache add args [ 'body-parser', null ]
+108 verbose cache add spec body-parser
+109 silly resolveWithNewModule dotenv@16.5.0 checking installable status
+110 silly cache add args [ 'dotenv', null ]
+111 verbose cache add spec dotenv
+112 silly resolveWithNewModule express@5.1.0 checking installable status
+113 silly cache add args [ 'express', null ]
+114 verbose cache add spec express
+115 silly resolveWithNewModule cors@2.8.5 checking installable status
+116 silly cache add args [ 'cors', null ]
+117 verbose cache add spec cors
+118 verbose stack Error: Missing required argument #1
+118 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+118 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+118 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+118 verbose stack     at /usr/share/npm/lib/install/deps.js:190:5
+118 verbose stack     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:35
+118 verbose stack     at Array.forEach (<anonymous>)
+118 verbose stack     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:11
+118 verbose stack     at Array.forEach (<anonymous>)
+118 verbose stack     at asyncMap (/usr/share/npm/node_modules/slide/lib/async-map.js:51:8)
+118 verbose stack     at exports.loadRequestedDeps (/usr/share/npm/lib/install/deps.js:188:3)
+119 verbose cwd /home/ns3/task-manager
+120 error Linux 4.15.0-213-generic
+121 error argv "/usr/bin/node" "/usr/bin/npm" "install" "express" "mongoose" "cors" "dotenv" "body-parser" "express-validator"
+122 error node v8.10.0
+123 error npm  v3.5.2
+124 error code EMISSINGARG
+125 error typeerror Error: Missing required argument #1
+125 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+125 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+125 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+125 error typeerror     at /usr/share/npm/lib/install/deps.js:190:5
+125 error typeerror     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:35
+125 error typeerror     at Array.forEach (<anonymous>)
+125 error typeerror     at /usr/share/npm/node_modules/slide/lib/async-map.js:52:11
+125 error typeerror     at Array.forEach (<anonymous>)
+125 error typeerror     at asyncMap (/usr/share/npm/node_modules/slide/lib/async-map.js:51:8)
+125 error typeerror     at exports.loadRequestedDeps (/usr/share/npm/lib/install/deps.js:188:3)
+126 error typeerror This is an error with npm itself. Please report this error at:
+126 error typeerror     <http://github.com/npm/npm/issues>
+127 verbose exit [ 1, true ]

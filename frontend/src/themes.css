@@ -1,0 +1,32 @@
+/* Background for body */
+body {
+  background-color: #e0f7fa; /* light sky blue */
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Override Bootstrap primary color */
+.btn-primary,
+.bg-primary,
+.text-primary,
+.badge.bg-primary {
+  background-color: #003366 !important; /* deep navy */
+  border-color: #003366 !important;
+  color: #ffffff !important;
+}
+
+.text-primary {
+  color: #003366 !important;
+}
+
+a,
+h1, h2, h3, h4 {
+  color: #003366;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #d1e3f0;
+}
+
