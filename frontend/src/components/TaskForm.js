@@ -1,56 +1,97 @@
-import React, { useState, useEffect } from 'react';
-import { createTask, updateTask } from '../services/taskService';
+import React, { useState } from 'react';
+import { createTask } from '../services/taskService';
 
-const TaskForm = ({ onTaskSaved, task }) => {
-  const [form, setForm] = useState({
-    title: '',
-    description: '',
-    dueDate: '',
-    status: 'Pending',
-  });
-
-  useEffect(() => {
-    if (task) setForm(task);
-  }, [task]);
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+function TaskForm({ onTaskAdded }) {
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [status, setStatus] = useState('Pending');
+  const [dueDate, setDueDate] = useState('');
+  const [attachment, setAttachment] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!form.title || !form.description || !form.dueDate) return;
+    if (!title.trim()) return;
 
-    if (task) {
-      await updateTask(task._id, form);
-    } else {
-      await createTask(form);
+    try {
+      const formData = new FormData();
+      formData.append('title', title);
+      formData.append('description', description);
+      formData.append('status', status);
+      if (dueDate) formData.append('dueDate', dueDate);
+      if (attachment) formData.append('attachment', attachment);
+
+      await createTask(formData);
+      setTitle('');
+      setDescription('');
+      setStatus('Pending');
+      setDueDate('');
+      setAttachment(null);
+      onTaskAdded();
+    } catch (err) {
+      console.error('Failed to create task', err);
     }
-
-    setForm({ title: '', description: '', dueDate: '', status: 'Pending' });
-    if (onTaskSaved) onTaskSaved();
   };
 
   return (
-    <form onSubmit={handleSubmit} className="card card-body mb-4">
-      <h5>{task ? 'Edit Task' : 'Add New Task'}</h5>
+    <form onSubmit={handleSubmit} className="mb-4">
+      <div className="mb-3">
+        <input
+          type="text"
+          placeholder="Title"
+          className="form-control"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          required
+        />
+      </div>
 
-      <input name="title" className="form-control mb-2" placeholder="Title" value={form.title} onChange={handleChange} />
-      <textarea name="description" className="form-control mb-2" placeholder="Description" value={form.description} onChange={handleChange} />
-      <input name="dueDate" type="date" className="form-control mb-2" value={form.dueDate?.split('T')[0]} onChange={handleChange} />
+      <div className="mb-3">
+        <textarea
+          placeholder="Description (optional)"
+          className="form-control"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+        />
+      </div>
 
-      <select name="status" className="form-select mb-2" value={form.status} onChange={handleChange}>
-        <option>Pending</option>
-        <option>In Progress</option>
-        <option>Completed</option>
-      </select>
+      <div className="mb-3">
+        <select
+          className="form-select"
+          value={status}
+          onChange={(e) => setStatus(e.target.value)}
+        >
+          <option value="Pending">Pending</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+        </select>
+      </div>
 
-      <button type="submit" className="btn btn-primary">
-        {task ? 'Update Task' : 'Create Task'}
-      </button>
+      <div className="mb-3">
+        <input
+          type="date"
+          className="form-control"
+          value={dueDate}
+          onChange={(e) => setDueDate(e.target.value)}
+        />
+      </div>
+
+      <div className="mb-3">
+        <input
+          type="file"
+          className="form-control"
+          onChange={(e) => setAttachment(e.target.files[0])}
+        />
+        {attachment && (
+          <div className="form-text text-success mt-1">
+            Attached: {attachment.name}
+          </div>
+        )}
+      </div>
+
+      <button className="btn btn-primary">Add Task</button>
     </form>
   );
-};
+}
 
 export default TaskForm;
 
